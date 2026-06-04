@@ -1,14 +1,10 @@
 #include <stdio.h>
 #include <string.h>
-
 int main() {
-
     char encrypted[100];
     char decrypted[100];
-
     printf("Enter encrypted text: ");
     fgets(encrypted, sizeof(encrypted), stdin);
-
     int i;
 
     for(i = 0; encrypted[i] != '\0'; i++) {

@@ -1,11 +1,7 @@
 #include <stdio.h>
-
 int main() {
-
     int a, b, c, d;
-
     printf("===== BRIDGE PROBLEM =====\n\n");
-
     printf("Enter crossing times in ascending order.\n");
     printf("Example: 1 2 5 10\n\n");
 

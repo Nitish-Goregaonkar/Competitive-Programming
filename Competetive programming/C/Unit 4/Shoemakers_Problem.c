@@ -1,36 +1,24 @@
 #include <stdio.h>
-
 struct Job {
     int id;
     int time;
     int fine;
 };
-
 int main() {
-
     int n;
-
     printf("===== SHOEMAKER'S PROBLEM =====\n\n");
-
     printf("Enter number of jobs: ");
     scanf("%d", &n);
-
     struct Job jobs[100];
-
     printf("\nEnter Time and Fine for each job.\n");
     printf("Example: Time=3 Fine=4\n\n");
-
     for(int i = 0; i < n; i++) {
-
         jobs[i].id = i + 1;
-
         printf("Job %d Time: ", i + 1);
         scanf("%d", &jobs[i].time);
-
         printf("Job %d Fine: ", i + 1);
         scanf("%d", &jobs[i].fine);
     }
-
     // Sort by Fine/Time ratio
     for(int i = 0; i < n - 1; i++) {
 

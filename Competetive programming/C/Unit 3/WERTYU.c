@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
 int main() {
-
     char keyboard[] =
     "`1234567890-=WERTYUIOP[]\\SDFGHJKL;'XCVBNM,./";
 

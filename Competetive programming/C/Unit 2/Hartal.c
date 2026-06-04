@@ -1,9 +1,6 @@
 #include <stdio.h>
-
 int main() {
-
     int days, parties;
-
     printf("Enter total number of days: ");
     scanf("%d", &days);
 
@@ -11,14 +8,10 @@ int main() {
     scanf("%d", &parties);
 
     int h[20];
-
     printf("Enter hartal parameter for each party:\n");
-
     for(int i = 0; i < parties; i++)
         scanf("%d", &h[i]);
-
     int lostDays = 0;
-
     for(int day = 1; day <= days; day++) {
 
         // Friday and Saturday are holidays

@@ -1,17 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-
 int main() {
-
     char correct[200], output[200];
-
     printf("Enter Correct Output: ");
     fgets(correct, sizeof(correct), stdin);
-
     printf("Enter User Output: ");
     fgets(output, sizeof(output), stdin);
-
     if(strcmp(correct, output) == 0) {
         printf("\nAccepted\n");
     }
