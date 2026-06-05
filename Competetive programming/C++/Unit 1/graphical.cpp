@@ -5,10 +5,8 @@ using namespace std;
 int main() { 
     int gd = DETECT, gm; 
     int choice; 
- 
     // Initialize graphics mode 
     initgraph(&gd, &gm, "C:\\Turboc3\\BGI"); // For Turbo C++ users 
- 
     // Clear screen and set background 
     setbkcolor(WHITE); 
     cleardevice(); 
