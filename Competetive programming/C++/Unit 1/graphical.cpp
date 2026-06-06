@@ -19,6 +19,9 @@ int main() {
     cout << "Enter your choice (1-3): "; 
     cin >> choice; 
  
+
+
+    
     // Draw the shape based on choice 
     switch(choice) { 
         case 1: 
