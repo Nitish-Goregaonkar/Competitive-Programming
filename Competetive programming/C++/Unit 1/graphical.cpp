@@ -18,9 +18,6 @@ int main() {
     cout << "3. Draw Circle" << endl; 
     cout << "Enter your choice (1-3): "; 
     cin >> choice; 
- 
-
-
     
     // Draw the shape based on choice 
     switch(choice) { 
