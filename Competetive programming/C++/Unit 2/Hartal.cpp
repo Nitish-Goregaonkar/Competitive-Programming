@@ -1,10 +1,7 @@
 #include <iostream>
 using namespace std;
-
 int main() {
-
     int days, parties;
-
     cout << "Enter total number of days: ";
     cin >> days;
 

@@ -5,43 +5,37 @@ int main() {
 
     int n;
 
-    cout << "===== SHELL SORT =====\n\n";
-
     cout << "Enter number of elements: ";
     cin >> n;
 
-    int arr[100];
+    int a[100];
 
-    cout << "\nEnter " << n << " numbers:\n";
-    cout << "Example: 45 23 67 12 89\n\n";
+    cout << "Enter numbers:\n";
 
-    for(int i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
+    for(int i=0;i<n;i++)
+        cin >> a[i];
 
-    // Shell Sort
-    for(int gap = n / 2; gap > 0; gap /= 2) {
+    for(int gap=n/2; gap>0; gap/=2) {
 
-        for(int i = gap; i < n; i++) {
+        for(int i=gap; i<n; i++) {
 
-            int temp = arr[i];
-            int j;
+            int temp=a[i];
+            int j=i;
 
-            for(j = i; j >= gap && arr[j - gap] > temp; j -= gap) {
-                arr[j] = arr[j - gap];
+            while(j>=gap && a[j-gap]>temp) {
+
+                a[j]=a[j-gap];
+                j-=gap;
             }
 
-            arr[j] = temp;
+            a[j]=temp;
         }
     }
 
     cout << "\nSorted Array:\n";
 
-    for(int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    }
-
-    cout << endl;
+    for(int i=0;i<n;i++)
+        cout << a[i] << " ";
 
     return 0;
 }
