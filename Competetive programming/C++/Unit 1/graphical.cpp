@@ -46,6 +46,6 @@ int main() {
     } 
  
     getch();       // Wait for user input 
-    closegraph();  // Close the graphics window 
+    closegraph();  // Close the graphics window x
     return 0; 
 } 

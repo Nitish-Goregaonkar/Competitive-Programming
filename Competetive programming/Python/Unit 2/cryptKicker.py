@@ -1,24 +1,25 @@
 print("===== CRYPT KICKER =====\n")
 
-print("Enter encrypted text:")
-text = input()
+encrypted = input("Enter encrypted text: ")
 
-shift = int(input("\nEnter shift value: "))
+decrypted = ""
 
-result = ""
+# Shift every letter back by 1
+for ch in encrypted:
 
-for ch in text:
+    if 'b' <= ch <= 'z':
+        decrypted += chr(ord(ch) - 1)
 
-    if ch.isalpha():
+    elif 'B' <= ch <= 'Z':
+        decrypted += chr(ord(ch) - 1)
 
-        base = ord('a')
+    elif ch == 'a':
+        decrypted += 'z'
 
-        new_char = chr((ord(ch.lower()) - base - shift) % 26 + base)
-
-        result += new_char
+    elif ch == 'A':
+        decrypted += 'Z'
 
     else:
-        result += ch
+        decrypted += ch
 
-print("\nDecrypted Text:")
-print(result)
+print("\nDecrypted Text:", decrypted)

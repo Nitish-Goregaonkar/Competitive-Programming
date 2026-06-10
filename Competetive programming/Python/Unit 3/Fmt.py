@@ -1,29 +1,19 @@
-print("===== FMT =====\n")
+print("===== FMT (TEXT FORMATTER) =====\n")
 
-text = input("Enter paragraph:\n")
+print("Enter a paragraph:")
+print("Example: This is a sample paragraph for testing the formatter.\n")
 
-width = int(input("\nEnter line width: "))
+text = input()
 
-words = text.split()
+print("\nFormatted Output:\n")
 
-line = ""
+count = 0
 
-print("\nFormatted Text:\n")
+for ch in text:
 
-for word in words:
+    print(ch, end="")
+    count += 1
 
-    if len(line) + len(word) + 1 <= width:
-
-        if line:
-            line += " "
-
-        line += word
-
-    else:
-
-        print(line)
-
-        line = word
-
-if line:
-    print(line)
+    if count >= 50 and ch == ' ':
+        print()
+        count = 0

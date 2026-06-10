@@ -1,20 +1,34 @@
 print("===== AUTOMATED JUDGE SCRIPT =====\n")
 
-print("Enter correct output:")
-correct = input()
+correct = input("Enter Correct Output: ")
 
-print("\nEnter user output:")
-user = input()
+output = input("Enter User Output: ")
 
-if correct == user:
+if correct == output:
 
     print("\nAccepted")
 
-elif ''.join(filter(str.isdigit, correct)) == \
-     ''.join(filter(str.isdigit, user)):
-
-    print("\nPresentation Error")
-
 else:
 
-    print("\nWrong Answer")
+    num1 = ""
+    num2 = ""
+
+    for c in correct:
+
+        if c.isdigit():
+
+            num1 += c
+
+    for c in output:
+
+        if c.isdigit():
+
+            num2 += c
+
+    if num1 == num2:
+
+        print("\nPresentation Error")
+
+    else:
+
+        print("\nWrong Answer")
