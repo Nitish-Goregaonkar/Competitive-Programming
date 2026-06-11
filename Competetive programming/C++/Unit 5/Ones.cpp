@@ -18,7 +18,6 @@ int main() {
         remainder = (remainder * 10 + 1) % n;
         count++;
     }
-
     cout << "\nSmallest number of 1's required = "
          << count << endl;
 
