@@ -22,7 +22,5 @@ int main() {
          << count << endl;
 
     return 0;
-} 
-
-
+}
 
