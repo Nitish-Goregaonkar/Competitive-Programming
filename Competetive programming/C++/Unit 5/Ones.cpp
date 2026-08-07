@@ -2,9 +2,6 @@
 using namespace std;
 int main() {
     int n;
-
-
-    
     cout << "===== ONES =====\n\n";
     cout << "Enter a number N: ";
     cout << "\nExample: 3\n\n";
