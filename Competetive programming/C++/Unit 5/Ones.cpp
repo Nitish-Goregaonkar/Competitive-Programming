@@ -7,7 +7,6 @@ int main() {
     cout << "\nExample: 3\n\n";
 
     cin >> n;
-
     int count = 1;
     long long remainder = 1 % n;
     while(remainder != 0) {
