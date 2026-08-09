@@ -5,8 +5,6 @@ int main() {
     cout << "===== ONES =====\n\n";
     cout << "Enter a number N: ";
     cout << "\nExample: 3\n\n";
-
-    
     cin >> n;
     int count = 1;
     long long remainder = 1 % n;
