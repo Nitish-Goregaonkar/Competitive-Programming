@@ -5,7 +5,6 @@ int main() {
     cout << "===== STERN-BROCOT NUMBER SYSTEM =====\n\n";
     cout << "Enter numerator and denominator:\n";
     cout << "Example: 5 2\n\n";
-
     cin >> m >> n;
 
     int leftNum = 0, leftDen = 1;
