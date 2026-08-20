@@ -9,7 +9,6 @@ int main() {
     int leftNum = 0, leftDen = 1;
     int rightNum = 1, rightDen = 0;
     int midNum = 1, midDen = 1;
-
     cout << "\nPath: ";
 
     while (!(midNum == m && midDen == n)) {
