@@ -6,7 +6,6 @@ int main() {
     cout << "Enter numerator and denominator:\n";
     cout << "Example: 5 2\n\n";
     cin >> m >> n;
-
     int leftNum = 0, leftDen = 1;
     int rightNum = 1, rightDen = 0;
     int midNum = 1, midDen = 1;
