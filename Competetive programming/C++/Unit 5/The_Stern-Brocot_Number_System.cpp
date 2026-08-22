@@ -11,7 +11,6 @@ int main() {
     int midNum = 1, midDen = 1;
     cout << "\nPath: ";
     while (!(midNum == m && midDen == n)) {
-
         if ((long long)m * midDen <
             (long long)n * midNum) {
 
