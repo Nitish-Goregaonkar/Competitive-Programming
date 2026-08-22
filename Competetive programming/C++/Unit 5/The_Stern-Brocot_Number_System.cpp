@@ -10,7 +10,6 @@ int main() {
     int rightNum = 1, rightDen = 0;
     int midNum = 1, midDen = 1;
     cout << "\nPath: ";
-
     while (!(midNum == m && midDen == n)) {
 
         if ((long long)m * midDen <
