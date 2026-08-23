@@ -13,7 +13,6 @@ int main() {
     while (!(midNum == m && midDen == n)) {
         if ((long long)m * midDen <
             (long long)n * midNum) {
-
             cout << "L";
             rightNum = midNum;
             rightDen = midDen;
