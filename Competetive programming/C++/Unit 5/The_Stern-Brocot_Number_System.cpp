@@ -15,7 +15,6 @@ int main() {
             (long long)n * midNum) {
 
             cout << "L";
-
             rightNum = midNum;
             rightDen = midDen;
 
