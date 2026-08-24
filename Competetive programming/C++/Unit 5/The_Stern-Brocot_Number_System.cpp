@@ -20,7 +20,6 @@ int main() {
             midDen = leftDen + rightDen;
         }
         else {
-
             cout << "R";
 
             leftNum = midNum;
