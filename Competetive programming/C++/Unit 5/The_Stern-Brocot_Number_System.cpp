@@ -16,7 +16,6 @@ int main() {
             cout << "L";
             rightNum = midNum;
             rightDen = midDen;
-
             midNum = leftNum + rightNum;
             midDen = leftDen + rightDen;
         }
