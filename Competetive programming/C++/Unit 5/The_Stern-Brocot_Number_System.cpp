@@ -21,7 +21,6 @@ int main() {
         }
         else {
             cout << "R";
-
             leftNum = midNum;
             leftDen = midDen;
 
