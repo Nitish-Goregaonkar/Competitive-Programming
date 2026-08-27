@@ -27,7 +27,6 @@ int main() {
             midDen = leftDen + rightDen;
         }
     }
-
     cout << endl;
 
     return 0;
