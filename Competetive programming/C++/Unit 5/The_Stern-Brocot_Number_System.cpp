@@ -23,7 +23,6 @@ int main() {
             cout << "R";
             leftNum = midNum;
             leftDen = midDen;
-
             midNum = leftNum + rightNum;
             midDen = leftDen + rightDen;
         }
